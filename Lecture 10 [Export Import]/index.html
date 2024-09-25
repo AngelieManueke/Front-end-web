@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+            background-color: white;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: black;
+        }
+
+        .info-list {
+            margin-top: 20px;
+            list-style-type: square;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+
+        .info-list b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Personal Information</div>
+        <hr>
+        <ul class="info-list" id="info-list">
+            <!-- Konten akan dimuat oleh JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Mengimpor modul JavaScript -->
+    <script type="module">
+        import personalModule from './message.js';
+
+        // Panggil fungsi untuk menampilkan informasi pribadi
+        personalModule.displayPersonalInfo(personalModule.personalInfo);
+    </script>
+</body>
+</html>

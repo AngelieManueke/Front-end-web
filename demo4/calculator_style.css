@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+.calculator {
+  /* Gaya untuk keseluruhan kalkulator */
+  /* ... */
+}
+
+.display-box {
+  /* Gaya untuk layar tampilan */
+  /* ... */
+}
+
+#btn {
+  /* Gaya untuk tombol (mungkin ada kesalahan di sini, seharusnya menggunakan class) */
+  /* ... */
+}
+
+input[type=button] {
+  /* Gaya untuk semua tombol input */
+  /* ... */
+}
+
+input:active[type=button] {
+  /* Gaya untuk tombol saat ditekan */
+  /* ... */
+}
